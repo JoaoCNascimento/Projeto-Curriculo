@@ -1,0 +1,217 @@
+/* Global config */
+
+* {
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI,sans-serif;
+
+}
+
+*::selection{
+
+    background-color: var(--textcolor);
+    color: var(--bgcolor);
+
+}
+
+/* Color variables */
+
+:root {
+
+    --bgcolor : #1C1C1C;
+    --textcolor: rgb(255, 255, 55);
+
+}
+
+/* body, headings, p */
+
+body {
+
+    background-color: var(--bgcolor);
+
+}
+
+h1 {
+
+    font-size: 1.7em;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 10px auto 10px auto;
+}
+
+h2 {
+
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 5px
+
+}
+
+p {
+
+    text-align: center;
+
+}
+/*---------------------*/
+
+/*  div container linktree  */
+
+
+#linktree {
+
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+#linktree img{
+
+    border-radius: 50%;
+    align-self: center;
+    margin: 15px auto;
+
+}
+
+#linktree a {
+
+    margin: 10px;
+    text-decoration: none; 
+    padding: 20px;
+    background-color: rgb(245, 245, 55);
+    color: var(--bgcolor);
+    text-transform: uppercase;
+    font-weight: 800;
+    border: 2px black solid;
+
+}
+
+#linktree a:hover {
+
+    color: yellow;
+    background-color: var(--bgcolor);
+    border-color: yellow;
+
+}
+
+#linktree a:focus {
+
+    color: yellow;
+    background-color: var(--bgcolor);
+    border-color: yellow;
+
+}
+
+/* div contentbox */
+
+.contentbox {
+
+    width: 40%;
+    margin: 25px auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: solid 2px var(--textcolor);
+    padding: 2%;
+    transition: 0.25s;
+    color: white
+
+}
+
+.contentbox ul {
+
+    text-align: left;
+    font-weight: bold;
+    margin: 6px auto 20px auto;
+
+}
+
+.contentbox ul li {
+
+    font-weight: normal;
+    text-align: left;
+    margin: 5px;
+    display: inline-block;
+
+}
+
+.contentbox:hover {
+
+    color: black;
+    background-color: white;
+    transition: 0.25s;
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+
+}
+
+hr {
+
+    border-color: var(--textcolor);
+    margin-bottom: 7px;
+}
+
+
+
+small {
+
+    color: var(--textcolor);
+    padding-bottom: 15px;
+
+}
+
+/* 
+
+media resolution 
+
+*/
+
+@media screen and (max-width: 399px){
+
+    #linktree{
+
+        width: 100%;
+
+    }
+    
+    .contentbox {
+        width: 90%;
+        padding: 2%;
+    }
+    
+    p {
+        margin-top: 5px;
+    }
+    
+}
+
+@media screen and (min-width: 400px) {
+    
+    .contentbox {
+
+        width: 60%;
+
+    }
+
+}
+
+@media (min-width: 1024px){
+
+    #linktree {
+
+        width: 40%;
+
+    }
+
+    .contentbox {
+
+        width: 40%;
+        padding: 2%;
+
+    }
+}
